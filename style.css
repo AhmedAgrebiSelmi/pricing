@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root{
+--primary-color: #FF6768 ;
+--secondary-color: #263859 ;
+--tertiary-color: #6B778D ;
+--light-color: #FAFAFA ;
+--dark-color: #191A19;
+
+}
+
+body{
+    background-color: var(--tertiary-color);
+    font-family: 'Roboto'
+    
+}
+    
+
+h1{
+    text-align: center;
+}
+
+.pricing {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--light-color);
+    margin: 10px;
+    padding: 0 30px;
+    text-align: center;
+    line-height: 2;    
+    padding-block: 5rem;
+
+
+   
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0px auto; 
+    
+   
+}
+
+@media screen and (max-width : 700px) {
+    .pricing-container {
+        
+        display: flex;
+    
+    }
+}
+
+
+.pricing h4 {
+    color: var(--light-color)
+}
+
+.pricing h2 {
+     color: var(--primary-color)
+     
+     
+}
+
+.period {
+    color: var(--tertiary-color);
+}
+
+ul {
+    color: var(--tertiary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--secondary-color);
+    border-color: transparent;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    ul {
+    display: none;
+
+    }
+    .pricing-container{
+        display: flex;
+        flex-direction: column;
+    }
+    }
+
+
+
+.details {
+    display: block;
+    color: var(--light-color) ;
+    text-decoration: none ;
+}
+
+.pricing:hover {
+    box-shadow: 0px 0px 72px 7px rgba(0,0,0,0.75);
+    border-top-color: var(--primary-color) ;
+}
+
+button:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color) ;
+    border-color: var(--primary-color);
+}
+
+ul{
+    list-style-type: none;
+}
